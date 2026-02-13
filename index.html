@@ -3,222 +3,584 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio_Aishu</title>
+    <title>Iswarya Jasmine | Frontend Developer & AI Enthusiast</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
 <!-- ================= NAVBAR ================= -->
 <header>
     <nav class="navbar">
-        <h2 class="logo">Aishu</h2>
+        <div class="logo-container">
+            <h2 class="logo">AJ</h2>
+            <span class="logo-text">Aishu</span>
+        </div>
         <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#coding">Coding</a></li>
-    <li><a href="#contact">Contact</a></li>
-</ul>
-
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#coding">Coding</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
     </nav>
 </header>
 
 <!-- ================= HOME ================= -->
 <section id="home" class="home">
-    <div class="home-content">
-        <h1>Hi, Myself <span>Iswarya Jasmine</span></h1>
-        <h3>Frontend Developer, AI Enthusiast</h3>
-        <p>I build modern, responsive websites using HTML, CSS and JavaScript.</p>
-        <p>I also build projects using Machine Learning and Deep Learning concepts.</p>
-        <a href="#projects" class="btn">View Projects</a>
+    <div class="home-container">
+        <div class="home-content">
+            <h3 class="home-subtitle">Hello, I'm</h3>
+            <h1 class="home-title">Iswarya <span class="highlight">Jasmine</span></h1>
+            <h2 class="home-role">Frontend Developer & AI Enthusiast</h2>
+            <p class="home-description">
+                I create modern, responsive web experiences and build intelligent systems 
+                using Machine Learning & Deep Learning. Passionate about turning ideas 
+                into interactive reality.
+            </p>
+            <div class="home-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+        
+        <div class="home-image">
+            <div class="image-placeholder">
+                <div class="code-symbol">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="ai-symbol">
+                    <i class="fas fa-brain"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="scroll-indicator">
+        <a href="#about"><i class="fas fa-chevron-down"></i></a>
     </div>
 </section>
 
 <!-- ================= ABOUT ================= -->
 <section id="about" class="about">
-    <h2>About Me</h2>
-
-    <p>
-        Hello! I am <strong>Iswarya Jasmine</strong>, a passionate Frontend Developer and AI Enthusiast
-        with a strong foundation in web development and intelligent systems.
-        I enjoy building clean, responsive, and user-friendly web applications
-        that deliver meaningful digital experiences.
-    </p>
-
-    <p>
-        I am currently pursuing my <strong>Bachelor of Technology in Computer Science and Engineering</strong>
-        with a specialization in <strong>Artificial Intelligence and Machine Learning</strong>
-        at University College of Engineering Kakinada (JNTUK), with a CGPA of 8.19 (till date).
-    </p>
-
-    <p>
-        I have hands-on experience with <strong>HTML, CSS, JavaScript, Python, Java, C, MySQL, and Firebase</strong>.
-        I have developed impactful projects like <strong>AI Stock Value Predictor</strong> and
-        <strong>Inno Hub</strong>, focusing on AI-driven and collaborative web applications.
-    </p>
-
-    <p>
-        I actively participate in workshops, volunteering activities, and technical events,
-        which have helped me develop strong communication, leadership, adaptability,
-        and interpersonal skills.
-    </p>
+    <div class="section-header">
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <p class="section-subtitle">Get to know me better</p>
+    </div>
+    
+    <div class="about-container">
+        <div class="about-content">
+            <h3>Frontend Developer & AI Enthusiast</h3>
+            <p>
+                I am <strong>Iswarya Jasmine</strong>, a passionate Computer Science student specializing in 
+                Artificial Intelligence and Machine Learning. I love building clean, responsive, and 
+                user-friendly web applications that deliver meaningful digital experiences.
+            </p>
+            
+            <p>
+                Currently pursuing my <strong>Bachelor of Technology</strong> at University College of 
+                Engineering Kakinada (JNTUK), I maintain a CGPA of <strong>8.19</strong>. My technical 
+                arsenal includes <strong>HTML, CSS, JavaScript, Python, Java, C, MySQL, and Firebase</strong>.
+            </p>
+            
+            <p>
+                I've developed impactful projects like <strong>AI Stock Value Predictor</strong> and 
+                <strong>Inno Hub</strong>, focusing on AI-driven solutions and collaborative platforms. 
+                Beyond coding, I actively participate in workshops and technical events, developing 
+                strong communication and leadership skills.
+            </p>
+            
+            <div class="about-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#experience" class="btn btn-outline">See Experience</a>
+            </div>
+        </div>
+        
+        <div class="about-image">
+            <div class="image-frame">
+                <div class="tech-icons">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-python"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- ================= SKILLS ================= -->
 <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <div class="skill-box">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Java</span>
-        <span>Python</span>
-        <span>C</span>
-        <span>Machine Learning</span>
-        <span>Deep Learning</span>
+    <div class="section-header">
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+        <p class="section-subtitle">Technologies I work with</p>
+    </div>
+    
+    <div class="skills-container">
+        <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Frontend</h3>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <span>HTML5</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>CSS3</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>JavaScript</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skill-category">
+            <h3><i class="fas fa-laptop-code"></i> Programming</h3>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <span>Python</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Java</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>C</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skill-category">
+            <h3><i class="fas fa-robot"></i> AI/ML</h3>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <span>Machine Learning</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Deep Learning</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Computer Vision</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
+<!-- ================= CERTIFICATIONS ================= -->
+<!-- ================= CERTIFICATIONS ================= -->
+<section id="certifications" class="certifications">
+    <div class="section-header">
+        <h2 class="section-title">My <span class="highlight">Certifications</span></h2>
+        <p class="section-subtitle">Professional certifications and achievements</p>
+    </div>
+    
+    <div class="certifications-container">
+        <!-- Java Certificate -->
+        <div class="certification-card">
+            <div class="certification-icon">
+                <i class="fab fa-java"></i>
+            </div>
+            <h3>Java (Basic)</h3>
+            <p class="certification-issuer">HackerRank</p>
+            <p class="certification-date">Earned: Feb 22, 2025</p>
+            <a href="certificate/java_basic_certificate.pdf" target="_blank" class="certification-link">
+                <i class="fas fa-file-pdf"></i> View Certificate
+            </a>
+        </div>
+        
+        <!-- Python Certificate -->
+        <div class="certification-card">
+            <div class="certification-icon">
+                <i class="fab fa-python"></i>
+            </div>
+            <h3>Python Course</h3>
+            <p class="certification-issuer">Mastering the Essentials</p>
+            <p class="certification-date">Completed: May 4, 2025</p>
+            <a href="certificate/python_certificate.png" target="_blank" class="certification-link">
+                <i class="fas fa-file-image"></i> View Certificate
+            </a>
+        </div>
+        
+        <!-- AI Primer Certificate -->
+        <div class="certification-card">
+            <div class="certification-icon">
+                <i class="fas fa-robot"></i>
+            </div>
+            <h3>Artificial Intelligence Primer</h3>
+            <p class="certification-issuer">Infosys Springboard</p>
+            <p class="certification-date">Completed: June 26, 2025</p>
+            <a href="certificate/ai_primer.pdf" target="_blank" class="certification-link">
+                <i class="fas fa-file-pdf"></i> View Certificate
+            </a>
+        </div>
+        
+        <!-- Deep Learning Certificate -->
+        <div class="certification-card">
+            <div class="certification-icon">
+                <i class="fas fa-brain"></i>
+            </div>
+            <h3>Introduction to Deep Learning</h3>
+            <p class="certification-issuer">Onwingspan</p>
+            <p class="certification-date">Completed: June 7, 2025</p>
+            <a href="certificate/deep_learning.pdf" target="_blank" class="certification-link">
+                <i class="fas fa-file-pdf"></i> View Certificate
+            </a>
+        </div>
+        
+        <!-- Generative AI Certificate -->
+        <div class="certification-card">
+            <div class="certification-icon">
+                <i class="fas fa-magic"></i>
+            </div>
+            <h3>Principles of Generative AI</h3>
+            <p class="certification-issuer">Onwingspan</p>
+            <p class="certification-date">Completed: June 19, 2025</p>
+            <a href="certificate/gen_ai.pdf" target="_blank" class="certification-link">
+                <i class="fas fa-file-pdf"></i> View Certificate
+            </a>
+        </div>
+    </div>
+</section>
 <!-- ================= PROJECTS ================= -->
 <section id="projects" class="projects">
-    <h2>Projects</h2>
-
-    <div class="project-container">
-
+    <div class="section-header">
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+        <p class="section-subtitle">Some of my recent work</p>
+    </div>
+    
+    <div class="projects-container">
         <div class="project-card">
+            <div class="project-icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
             <h3>AI Stock Value Predictor</h3>
-            <p>
-                Developed an AI-driven stock market analysis and forecasting platform
-                using ML and DL models such as LSTM, XGBoost, Prophet, and ARIMA.
+            <p class="project-tags">
+                <span>Python</span>
+                <span>ML</span>
+                <span>FastAPI</span>
+                <span>LSTM</span>
             </p>
-            <p>
-                Built an interactive dashboard using FastAPI, yfinance, and ApexCharts
-                to visualize real-time stock metrics and forecasts.
+            <p class="project-description">
+                AI-driven stock market analysis platform using ML/DL models (LSTM, XGBoost, Prophet, ARIMA) 
+                with interactive dashboard for real-time stock metrics and forecasts.
             </p>
-            <p>
-                Implemented secure user authentication and an AI chatbot
-                for natural language stock analysis.
-            </p>
+            <div class="project-features">
+                <p><i class="fas fa-check-circle"></i> Real-time stock forecasting</p>
+                <p><i class="fas fa-check-circle"></i> Interactive visualization dashboard</p>
+                <p><i class="fas fa-check-circle"></i> Secure user authentication</p>
+                <p><i class="fas fa-check-circle"></i> AI chatbot for stock analysis</p>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Iswarya-Jasmine/Ai-stock-market-prediction" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
         </div>
-
+        
         <div class="project-card">
+            <div class="project-icon">
+                <i class="fas fa-users"></i>
+            </div>
             <h3>Inno Hub</h3>
-            <p>
-                Designed and developed a collaborative platform featuring Skills,
-                Ideas, and Hires sections to showcase student capabilities.
+            <p class="project-tags">
+                <span>Web Development</span>
+                <span>Collaboration</span>
+                <span>Firebase</span>
             </p>
-            <p>
-                Implemented locality-based search to find nearby collaborators,
-                mentors, and innovation-related events.
+            <p class="project-description">
+                Collaborative platform featuring Skills, Ideas, and Hires sections with 
+                locality-based search to find nearby collaborators, mentors, and innovation events.
             </p>
-            <p>
-                Created an interactive idea-sharing space to promote creativity
-                and collaboration within the academic community.
-            </p>
+            <div class="project-features">
+                <p><i class="fas fa-check-circle"></i> Collaborative idea-sharing space</p>
+                <p><i class="fas fa-check-circle"></i> Locality-based search</p>
+                <p><i class="fas fa-check-circle"></i> Student skill showcase</p>
+                <p><i class="fas fa-check-circle"></i> Innovation event finder</p>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Iswarya-Jasmine/InnoHub" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://iswarya-jasmine.github.io/InnoHub/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
         </div>
+        
+        <div class="project-card">
+            <div class="project-icon">
+                <i class="fas fa-hard-hat"></i>
+            </div>
+            <h3>Helmet Detection System</h3>
+            <p class="project-tags">
+                <span>Python</span>
+                <span>Computer Vision</span>
+                <span>Deep Learning</span>
+                <span>YOLO</span>
+            </p>
+            <p class="project-description">
+                Real-time helmet detection system using computer vision and deep learning to identify 
+                whether workers are wearing safety helmets in industrial or construction environments.
+            </p>
+            <div class="project-features">
+                <p><i class="fas fa-check-circle"></i> Real-time detection</p>
+                <p><i class="fas fa-check-circle"></i> High accuracy model</p>
+                <p><i class="fas fa-check-circle"></i> Safety compliance monitoring</p>
+                <p><i class="fas fa-check-circle"></i> Alert system integration</p>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Iswarya-Jasmine/Helmet_Prediction" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="experience">
+    <div class="section-header">
+        <h2 class="section-title">Work <span class="highlight">Experience</span></h2>
+        <p class="section-subtitle">My professional journey</p>
+    </div>
+    
+    <div class="experience-container">
+        <div class="experience-card">
+            <div class="experience-header">
+                <div class="experience-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="experience-title">
+                    <h3>AI Intern</h3>
+                    <h4>Infosys | Internship 6.0</h4>
+                </div>
+                <div class="experience-date">
+                    <span class="date-badge">Oct 2025 - Dec 2025</span>
+                </div>
+            </div>
+            
+            <div class="experience-content">
+                <div class="experience-project">
+                    <h4>StockTrend: AI Enabled Stock Market Forecasting Model</h4>
+                    <p>
+                        Developed an AI-powered stock market forecasting system using machine learning 
+                        algorithms to predict stock trends and provide actionable insights for investors.
+                    </p>
+                </div>
+                
+                <div class="experience-responsibilities">
+                    <h5>Key Responsibilities & Achievements:</h5>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Implemented multiple ML models for stock prediction</li>
+                        <li><i class="fas fa-check"></i> Developed data preprocessing pipelines for financial data</li>
+                        <li><i class="fas fa-check"></i> Created visualization dashboards for stock trends</li>
+                        <li><i class="fas fa-check"></i> Optimized model performance and accuracy metrics</li>
+                        <li><i class="fas fa-check"></i> Successfully completed mandatory assignments and projects</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">Financial Modeling</span>
+                    <span class="skill-tag">Data Visualization</span>
+                </div>
+                
+                <a href="certificate/infosys_internship.pdf"  target="_blank" class="experience-certificate-link">
+                    <i class="fas fa-certificate"></i> View Internship Certificate
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- ================= EDUCATION ================= -->
 <section id="education" class="education">
-    <h2>Education</h2>
-
+    <div class="section-header">
+        <h2 class="section-title">Education <span class="highlight">Journey</span></h2>
+        <p class="section-subtitle">My academic background</p>
+    </div>
+    
     <div class="education-container">
-
-        <div class="education-card">
-            <h3>Bachelor of Technology (B.Tech)</h3>
-            <h4>Computer Science & Engineering (AI & ML)</h4>
-            <p><strong>University College of Engineering Kakinada (JNTUK)</strong></p>
-            <p>2023 – 2027</p>
-            <p class="cgpa">CGPA: 8.19 (Till Date)</p>
+        <div class="education-timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-date">2023 - 2027</div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Technology</h3>
+                    <h4>Computer Science & Engineering (AI & ML)</h4>
+                    <p class="institution">University College of Engineering Kakinada (JNTUK)</p>
+                    <p class="grade">CGPA: <strong>8.19</strong> (Till Date)</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-date">2021 - 2023</div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <h3>Intermediate (12th Grade)</h3>
+                    <h4>Science Stream</h4>
+                    <p class="institution">Sri Sai Aditya Junior College</p>
+                    <p class="grade">Percentage: <strong>96%</strong></p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-date">2020 - 2021</div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <h3>Secondary School (10th Grade)</h3>
+                    <h4>State Board</h4>
+                    <p class="institution">School Education</p>
+                    <p class="grade">GPA: <strong>10.0</strong></p>
+                </div>
+            </div>
         </div>
-
-        <div class="education-card">
-            <h3>Intermediate (12th Grade)</h3>
-            <h4>Science Stream</h4>
-            <p><strong>Sri Sai Aditya Junior College</strong></p>
-            <p>2021 – 2023</p>
-            <p class="cgpa">Percentage: 96%</p>
-        </div>
-
-        <div class="education-card">
-            <h3>Secondary School (10th Grade)</h3>
-            <h4>State Board</h4>
-            <p><strong>School Education</strong></p>
-            <p>2020 – 2021</p>
-            <p class="cgpa">GPA: 10 GPA </p>
-        </div>
-
     </div>
 </section>
+
 <!-- ================= CODING ================= -->
 <section id="coding" class="coding">
-    <h2>Coding Profiles</h2>
-
+    <div class="section-header">
+        <h2 class="section-title">Coding <span class="highlight">Profiles</span></h2>
+        <p class="section-subtitle">Where I practice and compete</p>
+    </div>
+    
     <div class="coding-container">
         <a href="https://www.hackerrank.com/profile/iswaryajasmine11" target="_blank" class="coding-card">
-            HackerRank
+            <div class="coding-icon">
+                <i class="fab fa-hackerrank"></i>
+            </div>
+            <h3>HackerRank</h3>
+            <div class="coding-link">
+                Visit Profile <i class="fas fa-external-link-alt"></i>
+            </div>
         </a>
-
+        
         <a href="https://leetcode.com/Iswarya_Jasmine" target="_blank" class="coding-card">
-            LeetCode
+            <div class="coding-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <h3>LeetCode</h3>
+            <div class="coding-link">
+                Visit Profile <i class="fas fa-external-link-alt"></i>
+            </div>
         </a>
-
+        
         <a href="https://www.geeksforgeeks.org/profile/iswaryajasmine?tab=activity" target="_blank" class="coding-card">
-            GeeksforGeeks
+            <div class="coding-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>GeeksforGeeks</h3>
+            <div class="coding-link">
+                Visit Profile <i class="fas fa-external-link-alt"></i>
+            </div>
         </a>
     </div>
 </section>
 
+<!-- ================= CONTACT ================= -->
 <section id="contact" class="contact">
-    <h2>Get in Touch</h2>
-
+    <div class="section-header">
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+        <p class="section-subtitle">Let's connect and collaborate</p>
+    </div>
+    
     <div class="contact-container">
-
-        <!-- Left: Contact Links -->
         <div class="contact-info">
-            <p>Feel free to reach out to me through any of these platforms:</p>
-
-            <a href="https://github.com/Iswarya-Jasmine" target="_blank" class="contact-link">
-                GitHub
-            </a>
-
-            <a href="https://www.linkedin.com/in/iswarya-jasmine-6b73952b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-link">
-                 LinkedIn
-            </a>
-
-            <a href="mailto:iswaryajasmine125@gmail.com" class="contact-link">
-                Email
-            </a>
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email</h3>
+                <p>iswaryajasmine125@gmail.com</p>
+                <a href="mailto:iswaryajasmine125@gmail.com" class="contact-link">
+                    <i class="fas fa-paper-plane"></i> Send Email
+                </a>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <h3>LinkedIn</h3>
+                <p>Connect professionally</p>
+                <a href="https://www.linkedin.com/in/iswarya-jasmine-6b73952b9" target="_blank" class="contact-link">
+                    <i class="fab fa-linkedin"></i> Visit Profile
+                </a>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <h3>GitHub</h3>
+                <p>View my projects</p>
+                <a href="https://github.com/Iswarya-Jasmine" target="_blank" class="contact-link">
+                    <i class="fab fa-github"></i> Visit Profile
+                </a>
+            </div>
         </div>
-
-        <!-- Right: Contact Form -->
-        <div class="contact-form">
-            <h3>Send Me a Message</h3>
-
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea rows="5" placeholder="Your Message"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-
     </div>
 </section>
-
 
 <!-- ================= FOOTER ================= -->
 <footer>
-    <p>© 2025 Iswarya Jasmine. All Rights Reserved.</p>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>Iswarya Jasmine</h2>
+            <p>Frontend Developer & AI Enthusiast</p>
+        </div>
+        
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
+        <div class="footer-social">
+            <a href="https://github.com/Iswarya-Jasmine" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/iswarya-jasmine-6b73952b9" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:iswaryajasmine125@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Iswarya Jasmine. All Rights Reserved.</p>
+            <p>Designed with <i class="fas fa-heart"></i> by Iswarya</p>
+        </div>
+    </div>
 </footer>
 
 <script src="script.js"></script>
